@@ -1,0 +1,23 @@
+### Create namespace
+kubectl create --filename=selenium-namespace.yaml
+
+### Create Firefox pods
+kubectl create --filename=selenium-node-firefox.yaml
+
+### Create Deployment
+kubectl create --filename=selenium-deployment.yaml
+
+
+### Create  Service
+kubectl create --filename=selenium-service.yaml
+
+
+### Get pods namespace selenium-grid
+
+kubectl get pods --namespace selenium-grid
+
+
+### RUN Selenium
+
+
+minikube service -n selenium-grid selenium-hub
