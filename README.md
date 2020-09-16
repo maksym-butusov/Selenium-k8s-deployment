@@ -17,7 +17,7 @@ Kubernetes related info:
 - git clone git@github.com:maksym-butusov/Selenium-k8s-deployment.git
 - cd Selenium-k8s-deployment/
 
-### And run the next commands:
+## And run the next commands:
 
 ### Create namespace
 kubectl create --filename=selenium-namespace.yaml
