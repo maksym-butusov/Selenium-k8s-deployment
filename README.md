@@ -33,8 +33,14 @@ kubectl create --filename=selenium-deployment.yaml
 kubectl create --filename=selenium-service.yaml
 
 
-### RUN Selenium Service and Selenium-hub
+### Run Selenium Service and Selenium-hub
 minikube service -n selenium-grid selenium-hub
+
+
+### Check - Service, Firefox-Nodes, Deployment from namespace selenium-grid
+
+kubectl get all --namespace=selenium-grid
+
 
 
 ## Let's move on to the result of deployment:
@@ -46,6 +52,12 @@ minikube service -n selenium-grid selenium-hub
 - Run selenium service and selenium-hub
 
 ![](screenshots/minikube_service.png  )
+
+
+- Check - Service, Firefox-Nodes, Deployment from namespace selenium-grid
+
+![](screenshots/get_all_namespace_selenium-grid.png  )
+
 
 - Check the result in the browser:
 
