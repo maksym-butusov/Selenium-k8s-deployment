@@ -13,11 +13,11 @@ kubectl create --filename=selenium-service.yaml
 
 
 ### Get pods namespace selenium-grid
-
 kubectl get pods --namespace selenium-grid
 
 
-### RUN Selenium
-
-
+### RUN Selenium Service and Selenium-hub
 minikube service -n selenium-grid selenium-hub
+
+### Get all from namespace selenium-grid
+kubectl get all --namespace=selenium-grid
